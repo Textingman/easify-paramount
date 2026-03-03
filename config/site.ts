@@ -5,7 +5,7 @@ export const siteConfig = {
   legalEntityName: "Quanterium LLC DBA Paramount Capital",
   
   // Contact Information
-  address: "123 Main Street, Suite 100, City, State 12345",
+  address: "3403 Bedford Avenue, Brooklyn, New York 11210",
   supportEmail: "support@tryparamountcapital.com",
   supportPhone: "+1 908 409 3168",
   

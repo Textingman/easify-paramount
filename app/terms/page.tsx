@@ -21,7 +21,7 @@ export default function Terms() {
             <div>
               <h2 className="text-2xl font-bold mb-4">Agreement to Terms</h2>
               <p className="text-gray-700">
-                By accessing or using the services of {siteConfig.brandName}, you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use our services or website.
+                By accessing or using the services of {siteConfig.legalEntityName}, you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use our services or website.
               </p>
             </div>
 

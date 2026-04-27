@@ -6,7 +6,7 @@ export default function Terms() {
       {/* Hero Section */}
       <section style={{backgroundColor: '#f2f4f6'}} className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-center text-gray-900">Terms & Conditions</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-center text-gray-900">Terms &amp; Conditions</h1>
         </div>
       </section>
 
@@ -111,12 +111,12 @@ export default function Terms() {
               </p>
               <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
                 <li><strong>Text HELP:</strong> Reply HELP to any text message for assistance</li>
-                <li><strong>Contact Us:</strong> Email {siteConfig.supportEmail} or call {siteConfig.supportPhone}</li>
+                <li><strong>Contact Us:</strong> Email {siteConfig.supportEmail}</li>
               </ul>
 
               <h3 className="text-xl font-semibold mb-3 mt-6">Supported Carriers</h3>
               <p className="text-gray-700 mb-4">
-                Our SMS program is supported by major carriers including AT&T, T-Mobile, Verizon, Sprint, and others. Carriers are not liable for delayed or undelivered messages.
+                Our SMS program is supported by major carriers including AT&amp;T, T-Mobile, Verizon, Sprint, and others. Carriers are not liable for delayed or undelivered messages.
               </p>
 
               <h3 className="text-xl font-semibold mb-3 mt-6">Privacy and Data</h3>
@@ -170,7 +170,7 @@ export default function Terms() {
             <div>
               <h2 className="text-2xl font-bold mb-4">Changes to Terms</h2>
               <p className="text-gray-700">
-                We reserve the right to modify these Terms and Conditions at any time. We will notify you of any material changes by posting the updated terms on this page and updating the "Last Updated" date. Your continued use of our services after changes are posted constitutes acceptance of the modified terms.
+                We reserve the right to modify these Terms and Conditions at any time. We will notify you of any material changes by posting the updated terms on this page and updating the &quot;Last Updated&quot; date. Your continued use of our services after changes are posted constitutes acceptance of the modified terms.
               </p>
             </div>
 
@@ -181,9 +181,8 @@ export default function Terms() {
               </p>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <p className="text-gray-700"><strong>{siteConfig.brandName}</strong></p>
-                <p className="text-gray-700">{siteConfig.address}</p>
+                {siteConfig.address && <p className="text-gray-700">{siteConfig.address}</p>}
                 <p className="text-gray-700">Email: <a href={`mailto:${siteConfig.supportEmail}`} className="text-black hover:text-gray-700">{siteConfig.supportEmail}</a></p>
-                <p className="text-gray-700">Phone: <a href={`tel:${siteConfig.supportPhone}`} className="text-black hover:text-gray-700">{siteConfig.supportPhone}</a></p>
               </div>
             </div>
           </div>

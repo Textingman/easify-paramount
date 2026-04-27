@@ -12,9 +12,11 @@ export default function Footer() {
             <p className="text-gray-300 text-sm mb-4">
               Strategic Investment Advisory & Portfolio Management
             </p>
-            <p className="text-gray-400 text-sm">
-              {siteConfig.address}
-            </p>
+            {siteConfig.address && (
+              <p className="text-gray-400 text-sm">
+                {siteConfig.address}
+              </p>
+            )}
           </div>
 
           {/* Quick Links */}
@@ -60,15 +62,6 @@ export default function Footer() {
                   className="text-gray-400 hover:text-white transition"
                 >
                   {siteConfig.supportEmail}
-                </a>
-              </div>
-              <div>
-                <p className="text-gray-500 text-sm">Phone</p>
-                <a 
-                  href={`tel:${siteConfig.supportPhone}`}
-                  className="text-gray-400 hover:text-white transition"
-                >
-                  {siteConfig.supportPhone}
                 </a>
               </div>
             </div>

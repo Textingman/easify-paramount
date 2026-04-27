@@ -21,7 +21,7 @@ export default function Privacy() {
             <div>
               <h2 className="text-2xl font-bold mb-4">Introduction</h2>
               <p className="text-gray-700">
-                {siteConfig.legalEntityName} ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+                {siteConfig.legalEntityName} (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
               </p>
             </div>
 
@@ -113,7 +113,7 @@ export default function Privacy() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold mb-4">Children's Privacy</h2>
+              <h2 className="text-2xl font-bold mb-4">Children&apos;s Privacy</h2>
               <p className="text-gray-700">
                 Our services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children. If you believe we have collected information from a child, please contact us immediately.
               </p>
@@ -122,7 +122,7 @@ export default function Privacy() {
             <div>
               <h2 className="text-2xl font-bold mb-4">Changes to This Privacy Policy</h2>
               <p className="text-gray-700">
-                We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. We encourage you to review this Privacy Policy periodically.
+                We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &quot;Last Updated&quot; date. We encourage you to review this Privacy Policy periodically.
               </p>
             </div>
 
@@ -133,9 +133,8 @@ export default function Privacy() {
               </p>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <p className="text-gray-700"><strong>{siteConfig.brandName}</strong></p>
-                <p className="text-gray-700">{siteConfig.address}</p>
+                {siteConfig.address && <p className="text-gray-700">{siteConfig.address}</p>}
                 <p className="text-gray-700">Email: <a href={`mailto:${siteConfig.supportEmail}`} className="text-black hover:text-gray-700">{siteConfig.supportEmail}</a></p>
-                <p className="text-gray-700">Phone: <a href={`tel:${siteConfig.supportPhone}`} className="text-black hover:text-gray-700">{siteConfig.supportPhone}</a></p>
               </div>
             </div>
           </div>
